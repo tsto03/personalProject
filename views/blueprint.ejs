@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blueprint</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e56f39fc5b.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="header">
+        <a href="/"><h1>Financial Literacy for Future Achievers</h1> </a>
+        <p>Reach the youth. Change the narrative. </p>
+    </div>
+    <div class="navbar">
+        <a href="/about">About</a>
+        <a href="/blueprint">Blueprint</a>
+        <a href="/archives">Archives</a>
+        <a href="/contact">Contact us</a>
+        <a href="#"><i class="fas fa-search"></i></a>
+
+    </div>
+    <h3>The Blueprint</h3>
+    <div class="socialmedia">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+    </div>
+
+    <div class="blueprint-container">
+        <div class="blueprint-column">
+
+            <p>Here is a guide for all students. After submitting the form, you'll be brought to 'Your Blueprint'. Based on your
+                answers, we
+                will give you a guide of where to start. You are welcome and encouraged to read all of the website's content, but
+                 strongly encouraged to first follow the plan just for you. Your blueprint. </p>
+
+            <div class="formBorder">
+                <form action="/add" method="POST">
+                    <div class="fname-container">
+                        <label for="fname">First Name: </label>
+                        <input type="text" name="fname" id="fname" required>
+                    </div>
+                    <br><br>
+                    <div class="lname-container">
+                        <label for="lname"> Last Name: </label>
+                        <input type="text" name="lname" id="lname" required>
+                    </div>
+                    <br><br>
+                    <p>What grade are you in?</p>
+                    <input type="radio" name="grade" id="middleschool" value="6-8" required>
+                    <label for="middleschool">6-8: </label>
+                    <br><br>
+                    <input type="radio" name="grade" id="highschool" value="9-12">
+                    <label for="highschool">9-12</label>
+                    <br><br>
+                    <p>Do you plan on going to college?</p>
+                    <input type="radio" name="college" id="collegeyes" value="yes" required>
+                    <label for="collegeyes">Yes</label>
+                    <br><br>
+                    <input type="radio" name="college" id="collegeno" value="no">
+                    <label for="collegeno">No</label>
+                    <br><br>
+                    <p>Do you have a car?</p>
+                    <input type="radio" name="car" id="caryes" value="yes" required>
+                    <label for="caryes">Yes</label>
+                    <br><br>
+                    <input type="radio" name="car" id="carno" value="no">
+                    <label for="carno">No</label>
+                    <br><br>
+                    <p>Do you know how a credit score is calculated?</p>
+                    <input type="radio" name="credit" id="credityes" value="yes" required>
+                    <label for="credityes">Yes</label>
+                    <br><br>
+                    <input type="radio" name="credit" id="creditno" value="no">
+                    <label for="creditno">No</label>
+                    <br><br>
+                    <p>Have you been taught about saving?</p>
+                    <input type="radio" name="saving" id="savingyes" value="yes" required>
+                    <label for="savingyes">Yes</label>
+                    <br><br>
+                    <input type="radio" name="saving" id="savingno" value="no">
+                    <label for="savingno">No</label>
+                    <br><br>
+                    <p>Have you been taught about debt?</p>
+                    <input type="radio" name="debt" id="debtyes" value="yes" required>
+                    <label for="debtyes">Yes</label>
+                    <br><br>
+                    <input type="radio" name="debt" id="debtno" value="no">
+                    <label for="debtno">No</label>
+                    <br><br>
+                    <div class="goal-container">
+                        <label for="goal">Financial Goal(s): </label>
+                        <input type="text" name="goal" id="goal" required>
+
+                    </div>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                    <span><a href="/yourblueprint">Your blueprint</a></span>
+                    <span><a href="/allstudents">View all students</a></span>
+                </form>
+
+
+            </div>
+
+
+        </div>
+        <div class="blueprint-column2">
+            <img src="./images/blueprint.png" width="500" height="400" alt="blueprint">
+            <img src="./images/classroom.png" width="500" height="400" alt="classroom">
+
+        </div>
+
+
+
+    </div>
+
+  <div class="footer">
+    <h6>Copyright 2020 Financial Literacy for Future Achievers. All Rights Reserved. </h6>
+</div>
+</body>
+
+</html>

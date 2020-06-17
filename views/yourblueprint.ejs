@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e56f39fc5b.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+    <title>Financial Literacy</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="/">
+            <h1>Financial Literacy for Future Achievers</h1>
+        </a>
+        <p>Reach the youth. Change the narrative. </p>
+    </div>
+    <div class="navbar">
+        <a href="/about">About</a>
+        <a href="/blueprint">Blueprint</a>
+        <a href="/archives">Archives</a>
+        <a href="/contact">Contact us</a>
+        <a href="#"><i class="fas fa-search"></i></a>
+
+
+
+    </div>
+    <div>
+        <h3>Your Blueprint</h3>
+    </div>
+    <div class="socialmedia-yourblueprint">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+    </div>
+    <div class="container">
+
+        <br>
+        <table class="table thead-light table-striped table-hover" style="background-color: lightgreen;">
+
+            <thead class="thead-light">
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Grade</th>
+                    <th>College</th>
+                    <th>Car</th>
+                    <th>Credit</th>
+                    <th>Saving</th>
+                    <th>Debt</th>
+                    <th>Goal</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <%=your_blueprint.fname %> </td>
+                    <td> <%=your_blueprint.lname %> </td>
+                    <td> <%= your_blueprint.grade %> </td>
+                    <td> <%= your_blueprint.college %> </td>
+                    <td> <%= your_blueprint.car %> </td>
+                    <td> <%= your_blueprint.credit %> </td>
+                    <td> <%= your_blueprint.saving %> </td>
+                    <td> <%= your_blueprint.debt %> </td>
+                    <td> <%= your_blueprint.goal %> </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <div class="your-blueprint">
+        <% if (your_blueprint.grade === '6-8') { %>
+        <p> You are still young, but it's good you're starting now! </p>
+
+
+        <% } else { %>
+        <p> You'll have a cap and gown before you know it. Start thinking about what you might do after graduating: </p>
+        <p><a href="https://www.liveabout.com/what-should-you-do-after-high-school-3196641">
+                <p>Life after graduation</p>
+            </a></p>
+
+        <% } %>
+    </div>
+    <div class="your-blueprint">
+        <% if (your_blueprint.college === 'yes') { %>
+        <p>Education is key. Read here first about how student loans may affect you in the future: </p>
+        <p><a
+                href="https://www.nerdwallet.com/blog/loans/student-loans/6-things-to-know-about-student-loans-before-freshman-year/">
+                <p>Student loans: what you need to know</p>
+            </a></p>
+
+        <% } else { %>
+        <% } %>
+
+    </div>
+    <div class="your-blueprint">
+        <% if (your_blueprint.car === 'no') { %>
+        <p> Before you buy, know the numbers! Whenever the day comes, read this before you go car shopping: </p>
+        <p><a href="https://www.thebalance.com/before-you-get-an-auto-loan-315589">
+                <p>Car loans: what you need to know</p>
+            </a></p>
+
+        <% } else { %>
+        <% } %>
+
+    </div>
+    <div class="your-blueprint">
+        <% if (your_blueprint.credit === 'no') { %>
+        <p> Close that app and forget about your followers. This is the number you want to know: </p>
+        <p><a
+                href="https://www.experian.com/blogs/ask-experian/credit-education/score-basics/what-affects-your-credit-scores/">
+                <p>Good credit</p>
+            </a></p>
+
+        <% } else { %>
+        <% } %>
+
+    </div>
+    <div class="your-blueprint">
+        <% if (your_blueprint.saving === 'no') { %>
+        <p> Now is the best time to start good habits. If you started working already or get an allowance this is
+            specially for you: </p>
+        <p> <a href="https://www.businessinsider.com/personal-finance/how-to-save-money-as-a-teenager">
+                <p>Save it</p>
+            </a></p>
+
+        <% } else { %>
+        <% } %>
+
+    </div>
+    <div class="your-blueprint">
+        <% if (your_blueprint.debt === 'no') { %>
+        <p> As a future achiever, debt doesn't have to be the enemy but it can't be the unknown: </p>
+        <p><a href="https://www.debt.org/faqs/americans-in-debt/">
+                <p>A debtors society</p>
+            </a></p>
+
+        <% } else { %>
+        <% } %>
+
+    </div>
+
+
+    <div class="your-blueprint">
+        <% if (your_blueprint.goal = '') { %>
+        <p> No matter the goal, you can reach it. Attain literacy first and make a plan. </p>
+
+
+        <% } else { %>
+        <% } %>
+
+    </div>
+
+    <a href="/blueprint">Go back </a>
+</body>
+
+
+</html>

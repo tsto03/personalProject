@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e56f39fc5b.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        
+    <title>Financial Literacy</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="/"><h1>Financial Literacy for Future Achievers</h1> </a>
+        <p>Reach the youth. Change the narrative. </p>
+    </div>
+    <div class="navbar">
+        <a href="/about">About</a>
+        <a href="/blueprint">Blueprint</a>
+        <a href="/archives">Archives</a>
+        <a href="/contact">Contact us</a>
+        <a href="#"><i class="fas fa-search"></i></a>
+        
+
+    </div>
+    <div>
+        <h3>All students</h3>
+
+    </div>
+    <div class="socialmedia-allstudents">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+    </div>
+    <div class="container">
+        <br>
+        <table class="table thead-light table-striped table-hover" style="background-color: lightgreen;">
+            <thead class="thead-light">
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Grade</th>
+                    <th>College</th>
+                    <th>Car</th>
+                    <th>Credit</th>
+                    <th>Saving</th>
+                    <th>Debt</th>
+                    <th>Goal</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <% all_students.forEach( (single_student) => { %>
+                <tr>
+                    <td> <%=single_student.fname %> </td>
+                    <td> <%=single_student.lname %> </td>
+                    <td> <%= single_student.grade %> </td>
+                    <td> <%= single_student.college %> </td>
+                    <td> <%= single_student.car %> </td>
+                    <td> <%= single_student.credit %> </td>
+                    <td> <%= single_student.saving %> </td>
+                    <td> <%= single_student.debt %> </td>
+                    <td> <%= single_student.goal %> </td>
+                </tr>
+
+                <% }); %>
+            </tbody>
+
+        </table>
+    </div>
+    <a href="/blueprint">Go back </a>
+
+</body>
+
+</html>
